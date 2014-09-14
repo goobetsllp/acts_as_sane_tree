@@ -56,7 +56,7 @@ module ActsAsSaneTree
         has_many :children, 
           :class_name => @configuration[:class].name, 
           :foreign_key => @configuration[:foreign_key], 
-          :order => @configuration[:order], 
+        #  :order => @configuration[:order],
           :dependent => @configuration[:dependent]
         belongs_to :parent, 
           :class_name => @configuration[:class].name, 
